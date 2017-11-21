@@ -63,16 +63,22 @@ private:
 		cin.ignore();
 		cout<<"Digite o Codigo do Estado"<<endl;
 		getline(cin,code);
-		this->states->remove(code);
+		if(this->states->remove(code)==NULL){
+			cout<<"Estado nao encontrado!";
+		}
 		system("cls");
 	}
 	void removeGasStation(){
 		string code;
-		// cin.ignore();
+		cin.ignore();
 		cout<<"Digite o Codigo do Estado"<<endl;
 		getline(cin,code);
 
 		State *statesLocal = this->states->search(code);
+		if(statesLocal==NULL){
+			cout<<"Estado nao encontrado";
+			return ;
+		}
 
 		cin.ignore();
 		cout<<"Digite o Nome do Posto"<<endl;
