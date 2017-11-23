@@ -86,28 +86,11 @@ public:
 		root = insert(value, root);
 	}
 	State* search(string value) {
-		return search(value, root)->state;
+		struct node *returnFunction = search(value, root);
+		return returnFunction==NULL ? NULL : returnFunction->state;
 	}
 	struct node* remove(string value) {
 		struct node* temp = remove(value, root);
 		return temp;
 	}
-	// void inorder(struct node* temp) {
-	// 	if(temp != NULL) {
-	// 		inorder(temp->left);
-	// 		cout << temp->state->getName() << " ";
-	// 		inorder(temp->right);
-	// 	}
-	// }
-	// void preorder(struct node* temp) { }
-	// void postorder(struct node* temp) { }
-	// void display() {
-	// 	inorder(root);
-	// }
 };
-// int main(){
-// 	Tree *bst = new Tree();
-// 	bst->insert(new State("AL"));
-// 	State *retorno = bst->search("AL");
-// 	return 0;
-// }

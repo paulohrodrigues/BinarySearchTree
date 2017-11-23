@@ -53,7 +53,7 @@ private:
 				cout<< "Nome: "<< g->getName() <<" Preco: "<< g->getPrice()<<endl;
 			}
 		}else{
-			cout<<"Estado nao encontrado!";
+			cout<<"Estado nao encontrado!"<<endl;;
 			return ;
 		}
 		// system("cls");

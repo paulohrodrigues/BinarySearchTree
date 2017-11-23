@@ -35,5 +35,6 @@ public:
 			i++;
 		}
 		cout<<"Posto nao encontrado!";
+		// getch();
 	}
 };
