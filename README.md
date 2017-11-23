@@ -1,4 +1,4 @@
 # BinarySearchTree
 
-Gerar .EXE
+Gerar .EXE:<br>
 g++ .\app.cpp -std=gnu++11
